@@ -15,6 +15,18 @@
   font-size: 2rem;
 }
 
+.navbar .container img{
+  position: relative;
+left: -15px;
+
+}
+
+.navbar .container span a{
+position: relative;
+left: -35px;
+font-size: 30px;
+}
+
 #seccion_uno{
   height: 100vh;
   /* background: url(/images/langostinos.jpg);
