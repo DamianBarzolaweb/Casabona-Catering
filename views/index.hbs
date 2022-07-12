@@ -1,31 +1,31 @@
 <!-- NAV BAR -->
-<nav class="navbar navbar-expand-lg fs-5 justify-content-center bg-black navbar-dark py-1  fixed-top">
+<nav class="navbar navbar-expand-lg fs-5 justify-content-center bg-dark navbar-dark py-1  fixed-top">
     <div class="container">
-        <img height="80" width="80" src="/images/vivo.svg" alt="#">
+        {{!-- <img height="80" width="80" src="/images/vivo.svg" alt="#"> --}}
         <span>
             <a href="#" class="navbar-brand">
 
-                asabona</a>
+                Casabona</a>
         </span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto gap-4">
                 <li class="nav-item">
-                    <a href="#learn" class="nav-link text-light">Home</a>
+                    <a href="#seccion_uno   " class="nav-link text-light">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a href="#questions" class=" nav-link text-light">Acerca de nosotros</a>
+                    <a href="#nosotros" class=" nav-link text-light">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Servicios" class=" nav-link text-light">Servicios</a>
+                    <a href="#boxes" class=" nav-link text-light">Servicios</a>
                 </li>
                 <li class="nav-item">
                     <a href="#instructors" class="nav-link text-light">Recetario</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a href="#instructors" class="nav-link text-light">Contacto</a>
+                    <a href="#contacto" class="nav-link text-light">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -87,37 +87,30 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="d-sm-flex mt-1 align-items-center justify-content-between">
-            <div>
-                <h1>Aquí<span class="text-warning"> Título</span></h1>
-                <p class="lead my-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum vero libero
-                    veritatis assumenda nihil, qui iste illo iure incidunt beatae.</p>
-                <button class="btn btn-primary mb-5 btn-lg">Botón</button>
-            </div>
-            <img class="img-fluid w-50 d-none d-sm-block" src="/6502420.svg" alt="">
-        </div>
-    </div>
+    
 
 </section>
 
-<!-- NEWSLETTER -->
-<section class="bg-warning text-light p-5">
-    <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-            <h3 class="mb-3 mb-md-0">Acá iría un newsletter</h3>
-            <div class="input-group news-input">
-                <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-
-                <button class="btn btn-dark btn-lg" type="button">Button</button>
+<!-- NOSOTROS -->
+<section id="nosotros" class="bg-dark text-light p-5 mt-5">
+<div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="/images/cocineros.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md p-5 text-light">
+                <h2>Acerca de <span class="text-warning">Nosotros</span></h2>
+                <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem commodi aspernatur est totam obcaecati ipsum, voluptatum, nobis numquam facilis distinctio odio molestiae deserunt. Assumenda nostrum, amet unde quisquam necessitatibus molestias, expedita quam ad sit repellat quidem veniam similique consequuntur provident quaerat error, odit molestiae veritatis eveniet! Doloribus non perferendis quos.
+                </p>
+                
             </div>
         </div>
     </div>
 </section>
 
 <!-- BOXES -->
-<section class="p-5 ">
+<section id="boxes" class=" ">
     <div class="container">
         <div class="row text-center g-4">
             <div class="col-md">
@@ -127,13 +120,12 @@
                             <i class="bi bi-laptop"></i>
                         </div>
                         <h3 class="card-title mb-3">
-                            Entradas
+                            Eventos Sociales
                         </h3>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero deleniti suscipit
                             voluptatem, reiciendis saepe.
                         </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -144,13 +136,12 @@
                             <i class="bi bi-person-square"></i>
                         </div>
                         <h3 class="card-title mb-3">
-                            Principales
+                            Eventos Corporativos
                         </h3>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero deleniti suscipit
                             voluptatem, reiciendis saepe.
                         </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -161,13 +152,12 @@
                             <i class="bi bi-people"></i>
                         </div>
                         <h3 class="card-title mb-3">
-                            Postres
+                            Eventos Temáticos
                         </h3>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero deleniti suscipit
                             voluptatem, reiciendis saepe.
                         </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -177,22 +167,22 @@
 
 <!-- LEARN SECTIONES -->
 
-<section id="learn" class="p-5">
+<section id="learn" class="p-5 bg-dark">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-md">
-                <img src="/6502420.svg" class="img-fluid" alt="">
+                <img src="/images/vivo (1).svg" class="img-fluid" alt="">
             </div>
-            <div class="col-md p-5">
-                <h2>Acá va servicios</h2>
+            <div class="col-md p-5 text-light">
+                <h2>Planifique con <span class="text-warning">Tiempo</span></h2>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi illum ab reprehenderit explicabo
-                    laudantium id?
+                    La planificación de eventos es un mal pasatiempo si se realiza a último momento. Para una eficiente prestación de servicio, se debe avisar 90 días previo al evento.
                 </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate excepturi quas ea distinctio
                     quia delectus quidem quis. Dolorem, quasi nam. Voluptatem odio ea earum quis, voluptates quam
                     reiciendis tenetur. Quaerat.</p>
-                <a href="#" class="btn btn-primary mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+                <a href="https://www.calendario-365.es/calendario-2022.html" target="_blank" class="btn btn-warning mt-3"><i class="bi bi-chevron-right"></i>Calendario 2022</a>
+                <a href="#contacto"class="btn btn-warning mt-3"><i class="bi bi-chevron-right"></i>Contáctenos</a>
             </div>
         </div>
     </div>
@@ -200,8 +190,9 @@
 
 <!-- QUESTIONS ACCORDION -->
 
-<section id="questions" class="p-5">
-    <div class="container">
+<section id="questions" class="p-5 bg-light  ">
+    <div class="container d-flex justify-content-center">
+        <div class="col-md">
         <h2 class="text-center-mb-4">Preguntas Frecuentes</h2>
         <div class="accordion accordion-flush" id="questions">
 
@@ -241,30 +232,106 @@
                 </div>
             </div>
         </div>
+        </div>
+    
     </div>
 </section>
 
 <!-- TEAM SECTION -->
 
-<section id="instructors" class="p-5 bg-primary">
-    <div class="container">
-        <h2 class="text-center-text-white">Nuestros compañeros</h2>
-        <p class="lead text-center text-white mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem?
-        </p>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="card bg-light">
-                    <div class="card-body text-center">
-                        <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle mb-3" alt="">
-                        <h3 class="card-title mb-3">Damian Barzola</h3>
-                        <p class="card-text">lorem15</p>
-                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                    </div>
-                </div>
-            </div>
+<section id="contacto" class="p-5 bg-dark">
+    <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01"></label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback text-dark">
+          Escriba su nombre
         </div>
     </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02"></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback text-dark">
+          Escriba su apellido
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername"></label>
+      <div class="input-group">
+        {{!-- <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div> --}}
+        <input type="email" class="form-control" id="validationCustomUsername" placeholder=Email aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback text-dark">
+          Escriba su mail de contacto
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">City</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <div class="invalid-feedback text-dark">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">State</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <div class="invalid-feedback text-dark">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <div class="invalid-feedback text-dark">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label text-light" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback text-dark">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
 </section>
 

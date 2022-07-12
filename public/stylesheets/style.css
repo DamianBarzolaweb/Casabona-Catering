@@ -9,6 +9,10 @@
 
 /* BARRA DE NAVEGACIÓN */
 
+.navbar .container .navbar-brand  {
+  font-size: 3rem;
+}
+
 .navbar-brand{
   text-transform: none;
   font-family: 'Kaushan Script', cursive;
@@ -99,6 +103,7 @@ animation: fadeInRight 0.5s ease forwards;
   min-height: 100vh;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
 }
 
@@ -111,7 +116,7 @@ animation: fadeInRight 0.5s ease forwards;
 }
 
 .carousel .carousel-item::before{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   content: '';
   position: absolute;
   left: 0;
@@ -142,3 +147,21 @@ margin: 0;
   background-position: center;
   background-size: cover;
 }
+
+#nosotros .container .d-sm-flex {
+  /* margin-top: 90px; */
+  min-height: 30vh;
+
+}
+
+
+
+#boxes{
+  padding: 100px;
+  background-image: url(/images/entrada.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 500px 20px 500px 50px;
+
+}
+
