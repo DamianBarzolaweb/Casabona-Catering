@@ -1,12 +1,8 @@
 <!-- NAV BAR -->
 <nav class="navbar navbar-expand-lg fs-5 justify-content-center bg-dark navbar-dark py-3  fixed-top">
     <div class="container">
-        {{!-- <img height="80" width="80" src="/images/vivo.svg" alt="#"> --}}
-        <span>
-            <a href="#" class="navbar-brand mx-4">
-
-                Casabona</a>
-        </span>
+        <img height="80" width="80" src="/images/vivo.svg" alt="#">
+       
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navmenu">
@@ -33,10 +29,8 @@
 </nav>
 
 <!-- SHOWCASE -->
-<section id="seccion_uno" class="bg-dark  text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start
+<section id="seccion_uno" class="bg-dark  text-light p-1 p-lg-0 pt-lg-5 text-center text-sm-start
     ">
-
-
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-controls">
             <div class="carousel-indicators">
@@ -86,9 +80,6 @@
             </div>
         </div>
     </div>
-
-
-
 </section>
 
 <!-- NOSOTROS -->
@@ -99,7 +90,7 @@
                 <img src="/images/cocineros.svg" class="img-fluid" alt="">
             </div>
             <div class="col-md p-5 text-dark">
-                <h2>Acerca de <span class="text-warning">Nosotros</span></h2>
+                <h2 class="fs-2">Acerca de <span class="text-primary">Nosotros</span></h2>
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem commodi aspernatur est totam
                     obcaecati ipsum, voluptatum, nobis numquam facilis distinctio odio molestiae deserunt. Assumenda
@@ -114,13 +105,13 @@
 </section>
 
 <!-- SERVICIOS -->
+<div class="containe">
 <section id="servicios" class="bg-dark ">
     <div class="row">
         <div class="col-12 mb-5 mt-5 intro-seccion text-light text-center">
-            <h2>Nuestros <span class="text-warning">Servicios</span></h2>
-            <div class="divider"></div>
-            <p class="lead">En Casabona Catering prestamos un servicio gastronómico de primera calidad y sobre todo versátil, porque sabemos interpretar el contexto de tu evento.<br>
-            Cada uno de nuestros servicios es diferente, conocé más acerca de ellos: <span class="sociales_y_corporativos"> sociales y corporativos.  </span>    
+            <h2 class="fs-2">Nuestros <span class="text-primary">Servicios</span></h2>
+            <p class="lead mt-5">En Casabona Catering prestamos un servicio gastronómico de primera calidad y sobre todo versátil, porque sabemos interpretar el contexto de tu evento.<br>
+            Cada uno de nuestros servicios es diferente, conocé más acerca de ellos: <span class="sociales_y_corporativos text-primary"> <strong> sociales y corporativos.</strong></span>    
             
             </p>
         </div>
@@ -148,6 +139,7 @@
         </div>
         
     </div>
+    </div>
 </section>
 
 {{!-- GALERÍA --}}
@@ -167,7 +159,7 @@
                 <img src="/images/vivo (1).svg" class="img-fluid" alt="">
             </div>
             <div class="col-md p-5 text-dark">
-                <h2>Planifique con <span class="text-warning">Tiempo</span></h2>
+                <h2>Planifique con <span class="text-primary">Tiempo</span></h2>
                 <p class="lead">
                     La planificación de eventos es un mal pasatiempo si se realiza a último momento. Para una eficiente
                     prestación de servicio, se debe avisar 90 días previo al evento. <br>
@@ -181,68 +173,21 @@
                 </p>
 
                 <a href="https://www.calendario-365.es/calendario-2022.html" target="_blank"
-                    class="btn btn-warning mt-3"><i class="bi bi-chevron-right"></i>Calendario 2022</a>
-                <a href="#contacto" class="btn btn-warning mt-3"><i class="bi bi-chevron-right"></i>Contáctenos</a>
+                    class="btn btn-primary mt-3"><i class="bi bi-chevron-right"></i>Calendario 2022</a>
+                <a href="#contacto" class="btn btn-primary mt-3"><i class="bi bi-chevron-right"></i>Contáctenos</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- QUESTIONS ACCORDION -->
-
-<section id="questions" class="p-5 bg-light  ">
-    <div class="container d-flex justify-content-center">
-        <div class="col-md">
-            <h2 class="text-center-mb-4">Preguntas Frecuentes</h2>
-            <div class="accordion accordion-flush" id="questions">
-
-                <!-- ITEM 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-one"> ¿Donde están ubicados?</button>
-                    </h2>
-                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Estamos ubicados en la localidad de Quilmes, zona Sur del Gran
-                            Buenos
-                            Aires.</div>
-                    </div>
-                </div>
-
-                <!-- ITEM 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-two">¿Cuanto tardan en realizar un presupuesto? </button>
-                    </h2>
-                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">De 1 a 2 días hábiles.</div>
-                    </div>
-                </div>
-
-                <!-- ITEM 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-three">What do i need to know? </button>
-                    </h2>
-                    <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                        data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                            fuga
-                            est non corrupti minima magni?</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 <!-- TEAM SECTION -->
 
 <section id="contacto" class="p-5 bg-dark">
     <div class="container d-flex justify-content-center">
+        <div class="imagen-formulario">
+            <img width="400" height="400" src="/images/contacto.svg" alt="">
+        </div>
     <form class="needs-validation" novalidate>
         <div class="form-row">
             <div class="col-md-12 mb-3">

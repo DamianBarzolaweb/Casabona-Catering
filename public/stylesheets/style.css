@@ -41,13 +41,13 @@ font-size: 30px;
 }
 
 .navbar {
-  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
  
 }
 
 .navbar li a{
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -165,10 +165,6 @@ margin: 0;
   width: 100vw;
 }
 
-
-
-
-
 #galeria .card{
   width: 400px;
   height: 400px;
@@ -178,7 +174,7 @@ margin: 0;
   margin-bottom: 40px;
 }
 
-.intro-seccion .divider{
+.intro-eion .divider{
   height: 4px;
   width: 130px;
   background: linear-gradient(to right,#00e0fe, #cfdd06);
@@ -197,10 +193,6 @@ margin: 0;
 
   overflow: hidden;
 }
-
-
-
-
 
 .container .card
 {
@@ -261,6 +253,33 @@ font-style: italic;
         left: -2px;
     }
 }
+
+@media (max-width: 600px)
+{
+  .navbar li a{
+    font-size: 20epx;
+  }
+  .carousel .carousel-item.active .container h2{
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+  
+  }
+  .carousel .carousel-item.active .container h2 p{
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+  
+  }
+
+}
+
+@media (max-width: 785px)
+{
+  #contacto .container .imagen-formulario{
+    display: none;
+  }
+}
+
+
 
 #learn{
   width: 100vw;
