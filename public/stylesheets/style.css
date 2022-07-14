@@ -49,7 +49,15 @@ font-size: 30px;
 .navbar li a{
   font-size: 16px;
   text-transform: uppercase;
+  position: relative;
+  transition: 0.8s;
 }
+
+.navbar li a:hover{
+  background-color: #098292;
+}
+
+
 
 .carousel .carousel-item {
   height: 700px;
@@ -257,7 +265,7 @@ font-style: italic;
 @media (max-width: 600px)
 {
   .navbar li a{
-    font-size: 20epx;
+    font-size: 20px;
   }
   .carousel .carousel-item.active .container h2{
     font-size: 50px;
@@ -272,9 +280,8 @@ font-style: italic;
 
 }
 
-@media (max-width: 785px)
-{
-  #contacto .container .imagen-formulario{
+@media (max-width:1043px){
+  #contacto .container img {
     display: none;
   }
 }
