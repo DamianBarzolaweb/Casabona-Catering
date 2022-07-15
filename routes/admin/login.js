@@ -18,7 +18,7 @@ router.post('/', async function(req,res,next){
         console.log(data);
 
         if(data != undefined){
-            res.redirect('/admin/novedades')
+            res.redirect('/admin/tareas')
         } else {
             res.render('admin/login',{
                 layout:'admin/layout',
