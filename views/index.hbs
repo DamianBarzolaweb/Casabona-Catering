@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg fs-5 justify-content-center bg-dark navbar-dark py-3  fixed-top">
     <div class="container">
         <img height="80" width="80" src="/images/vivo.svg" alt="#">
-       
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navmenu">
@@ -106,40 +106,41 @@
 
 <!-- SERVICIOS -->
 <div class="containe">
-<section id="servicios" class="bg-dark ">
-    <div class="row">
-        <div class="col-12 mb-5 mt-5 intro-seccion text-light text-center">
-            <h2 class="fs-2">Nuestros <span class="text-primary">Servicios</span></h2>
-            <p class="lead mt-5">En Casabona Catering prestamos un servicio gastronómico de primera calidad y sobre todo versátil, porque sabemos interpretar el contexto de tu evento.<br>
-            Cada uno de nuestros servicios es diferente, conocé más acerca de ellos: <span class="sociales_y_corporativos text-primary"> <strong> sociales y corporativos.</strong></span>    
-            
-            </p>
-        </div>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center position-relative mt-5 flex-wrap">
-        <div class="card d-flex position-relative flex-column" data-aos="fade-right">
-            <div class='imgContainer'>
-                <img
-                    src='/images/corporativo.jpg'>
-            </div>
-            <div class="content">
-                <h2>Eventos Sociales</h2>
-                <p>Bodas de Plata, Bodas de Oro, Cumpleaños, Casamientos, Graduaciones.</p>
+    <section id="servicios" class="bg-dark ">
+        <div class="row">
+            <div class="col-12 mb-5 mt-5 intro-seccion text-light text-center">
+                <h2 class="fs-2">Nuestros <span class="text-primary">Servicios</span></h2>
+                <p class="lead mt-5">En Casabona Catering prestamos un servicio gastronómico de primera calidad y sobre
+                    todo versátil, porque sabemos interpretar el contexto de tu evento.<br>
+                    Cada uno de nuestros servicios es diferente, conocé más acerca de ellos: <span
+                        class="sociales_y_corporativos text-primary"> <strong> sociales y corporativos.</strong></span>
+
+                </p>
             </div>
         </div>
-        <div class="card d-flex position-relative flex-column" data-aos="fade-up">
-            <div class='imgContainer'>
-                <img
-                    src='/images/casamiento.jpg'>
+        <div class="container d-flex align-items-center justify-content-center position-relative mt-5 flex-wrap">
+            <div class="card d-flex position-relative flex-column" data-aos="fade-right">
+                <div class='imgContainer'>
+                    <img src='/images/corporativo.jpg'>
+                </div>
+                <div class="content">
+                    <h2>Eventos Sociales</h2>
+                    <p>Bodas de Plata, Bodas de Oro, Cumpleaños, Casamientos, Graduaciones.</p>
+                </div>
             </div>
-            <div class="content">
-                <h2>Eventos Corporativos</h2>
-                <p>Los eventos corporativos forman parte de la estrategia de comunicación de la organización. Cada evento organizado por la empresa tiene una motivación única y diferente.</p>
+            <div class="card d-flex position-relative flex-column" data-aos="fade-up">
+                <div class='imgContainer'>
+                    <img src='/images/casamiento.jpg'>
+                </div>
+                <div class="content">
+                    <h2>Eventos Corporativos</h2>
+                    <p>Los eventos corporativos forman parte de la estrategia de comunicación de la organización. Cada
+                        evento organizado por la empresa tiene una motivación única y diferente.</p>
+                </div>
             </div>
+
         </div>
-        
-    </div>
-    </div>
+</div>
 </section>
 
 {{!-- GALERÍA --}}
@@ -184,82 +185,83 @@
 <!-- TEAM SECTION -->
 
 <section id="contacto" class="p-5 bg-dark">
-    <div class="container d-flex justify-content-start gap-5" >
+    <div class="container d-flex justify-content-start gap-5">
         <div class="imagen-formulario">
             <img width="600" height="400" src="/images/contacto.svg" alt="">
         </div>
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom01"></label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback text-dark">
-                    Escriba su nombre
-                </div>
-            </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom02"></label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback text-dark">
-                    Escriba su apellido
-                </div>
-            </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom03"></label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <form action="/index.js" method="post" class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom01"></label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" name="nombre"
+                        required>
+                    <div class="valid-feedback">
+                        ¡Bien!
                     </div>
-                    <input type="email" class="form-control" id="validationCustom03" placeholder=Email
+                    <div class="invalid-feedback text-light">
+                        Escriba su nombre
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom02"></label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"
+                        name="apellido" required>
+                    <div class="valid-feedback">
+                        ¡Bien!
+                    </div>
+                    <div class="invalid-feedback text-light">
+                        Escriba su apellido
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom03"></label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="validationCustom03" placeholder="Email" name="email"
+                            required>
+                        <div class="invalid-feedback text-light">
+                            Escriba su mail de contacto
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom04">City</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Localidad" name="localidad"
                         required>
                     <div class="invalid-feedback text-light">
-                        Escriba su mail de contacto
+                        Escriba la Localidad donde vive
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom05">State</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Provincia"
+                        name="provincia" required>
+                    <div class="invalid-feedback text-light">
+                        Escriba la Provincia donde vive
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom06">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom06" placeholder="Código Postal" name="codigopostal" required>
+                    <div class="invalid-feedback text-light">
+                        Escriba su Código Postal
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom04">City</label>
-                <input type="text" class="form-control" id="validationCustom04" placeholder="City" required>
-                <div class="invalid-feedback text-dark">
-                    Please provide a valid city.
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label text-light" for="invalidCheck">
+                        Estoy de Acuerdo con los <a href="#">Términos y Condiciones</a>
+                    </label>
+                    <div class="invalid-feedback text-light">
+                        Debe estar de acuerdo con los Términos y Condiciones
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom05">State</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="State" required>
-                <div class="invalid-feedback text-dark">
-                    Please provide a valid state.
-                </div>
-            </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom06">Zip</label>
-                <input type="text" class="form-control" id="validationCustom06" placeholder="Zip" required>
-                <div class="invalid-feedback text-dark">
-                    Please provide a valid zip.
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label text-light" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback text-dark">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
+            <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+        </form>
     </div>
 
     <script>
