@@ -43,7 +43,6 @@ font-size: 30px;
 .navbar {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
- 
 }
 
 .navbar li a{
@@ -132,7 +131,7 @@ animation: fadeInRight 0.5s ease forwards;
 }
 
 .carousel .carousel-item::before{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   content: '';
   position: absolute;
   left: 0;
@@ -173,9 +172,14 @@ margin: 0;
   width: 100vw;
 }
 
-#galeria .card{
-  width: 400px;
-  height: 400px;
+
+#galeria .container {
+  width: 100%;
+}
+
+
+#galeria {
+  height: 100vh;
 }
 
 .intro-seccion {
@@ -300,4 +304,12 @@ font-style: italic;
 .container .card .content h2 p{
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
+}
+
+#prueba{
+  height: 100vh;
+  width: 100%;
+  background: url(/images/prueba.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

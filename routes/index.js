@@ -7,8 +7,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post ('/', function(req,res,next){
-  console.log(req.body.mensaje)
+router.post ('/', async function(req,res,next){
+  var nombre = req.body.nombre;
+  var email = req.body.email;
+  var localidad = req.body.localidad;
+  var mensaje = req.body.mensaje;
 })
+
+var obj = {
+  to:'barzoladamian85@gmail.com',
+  subject:'Contacto desde la web',
+  html: 'prueba' 
+}
 
 module.exports = router;

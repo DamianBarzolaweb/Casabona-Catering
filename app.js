@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 // agregado
 var loginRouter = require('./routes/admin/login');
+var tareasRouter = require('./routes/admin/tareas')
 
 const { handlebars } = require('hbs');
 const { hasSubscribers } = require('diagnostics_channel');
@@ -31,6 +32,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 // agregado
 app.use('/admin/login', loginRouter);
+app.use('/admin/tareas', tareasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
