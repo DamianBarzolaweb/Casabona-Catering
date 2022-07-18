@@ -1,19 +1,30 @@
 var express = require('express');
 var router = express.Router();
-var usuariosModel = require('./../../models/usuariosModel')
+var tareasModel = require('../../models/tareasModel')
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('admin/tareas', { title: 'Express' });
-    layout:'admin/layout'
-});
 
 router.get('/', async function(req,res,next){
-    try{
-       
-    }catch(error){
-        console.log(error)
-    }
-})
+    var tareas = await tareasModel.getTareas();
 
-module.exports = router;
+    res.render('admin/tareas',{
+        layout:'admin/layout',
+        persona:req.session.nombre,
+        tareas 
+        
+    });   
+});
+
+// router.get('/', function(req, res, next) {
+//   res.render('admin/tareas', { title: 'Express' });
+//     layout:'admin/layout'
+// });
+
+// router.get('/', async function(req,res,next){
+//     try{
+       
+//     }catch(error){
+//         console.log(error)
+//     }
+// })
+ 
+// module.exports = router;
