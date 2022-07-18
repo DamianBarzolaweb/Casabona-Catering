@@ -148,32 +148,45 @@
 {{!-- GALERÍA --}}
 
 <section id="galeria" class="p-5 ">
-    <div class="col-lg-4 mb-4 container">
-        <h1 class="text-light">Nuestra Galería</h1>
-        <p class="text-light">Haga click para agrandar</p>
-    </div>
+    <div class="row">
+            <div class="col-12 mb-5 mt-5 intro-seccion text-light text-center">
+                <h2 class="fs-2">Galería de <span class="text-primary">Fotos</span></h2>
+                <p class="lead mt-5">¡Hacé click para agrandar las fotografías!<br></p>
+            </div>
+        </div>
     <div class="container">
-        <div class="row d-flex">
+        <div class="row d-flex  ">
             <div class="col-lg-4 mb-4">
                 <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen1">
                     <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-4 mb-4">
-                <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen2">
+                    <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 mb-4">
-                <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen3">
+                    <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 mb-4">
-                <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen4">
+                    <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 mb-4">
-                <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen5">
+                    <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 mb-4">
-                <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagen6">
+                    <img class="w-100 mb-4 rounded" src="/images/corporativo.jpg" alt="">
+                </a>
             </div>
+            
         </div>
     </div>
 
@@ -187,7 +200,14 @@
             </div>
         </div>
     </div>
+    <div tabindex="-1" aria-labelledby="modalImagen2" aria-hidden="true" class="modal fade" id="modalImagen2">
 
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="/images/corporativo.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- LEARN SECTIONES -->
@@ -272,14 +292,7 @@
                         Escriba la Localidad donde vive
                     </div>
                 </div>
-                <div class="col-md-12 mb-3">
-                    <label for="validationCustom05">Provincia</label>
-                    <input type="text" class="form-control" id="validationCustom05" placeholder="Provincia"
-                        name="provincia" required>
-                    <div class="invalid-feedback text-light">
-                        Escriba la Provincia donde vive
-                    </div>
-                </div>
+                
                 <div class="col-md-12 mb-3">
                     <label for="validationCustom06">CódigoPostal</label>
                     <input type="text" class="form-control" id="validationCustom06" placeholder="Código Postal"
@@ -310,8 +323,9 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+            <input class="bg-primary border-0 text-light mt-3" id="boton" type="submit">Enviar</input>
         </form>
+        {{message}}
     </div>
 
     <script>

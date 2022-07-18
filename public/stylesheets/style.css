@@ -45,6 +45,7 @@ font-size: 30px;
   font-weight: bold;
 }
 
+
 .navbar li a{
   font-size: 16px;
   text-transform: uppercase;
@@ -172,14 +173,12 @@ margin: 0;
   width: 100vw;
 }
 
-
-#galeria .container {
-  width: 100%;
+#galeria .container{
+  height: auto;
 }
 
-
 #galeria {
-  height: 100vh;
+  height: auto;
 }
 
 .intro-seccion {
@@ -201,10 +200,7 @@ margin: 0;
   margin-left: 40px ;
 }
 
-#questions{
 
-  overflow: hidden;
-}
 
 .container .card
 {
@@ -291,11 +287,6 @@ font-style: italic;
 }
 
 
-
-#learn{
-  width: 100vw;
-}
-
 .container .card .content h2{
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
@@ -306,10 +297,9 @@ font-style: italic;
   font-size: 16px;
 }
 
-#prueba{
-  height: 100vh;
-  width: 100%;
-  background: url(/images/prueba.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+#boton{
+  background-color: red;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
 }
