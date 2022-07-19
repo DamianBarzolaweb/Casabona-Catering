@@ -18,10 +18,12 @@ router.post('/', async function(req,res,next){
 
 
         if(data != undefined){
+           
+            // layout:'admin/layout'
+            req.session.id_usuario = data.id;
+            req.session.nombre = data.usuario;
+
             res.redirect('/admin/tareas')
-            layout:'admin/layout'
-            // req.session.id_usuario = data.id;
-            // req.session.nombre = data.usuario;
 
         } else {
             res.render('admin/login',{
