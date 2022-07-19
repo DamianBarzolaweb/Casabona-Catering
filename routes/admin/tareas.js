@@ -7,7 +7,6 @@ router.get('/', async function(req,res,next){
     var tareas = await tareasModel.getTareas();
 
     res.render('admin/tareas',{
-        layout:'admin/layout',
         persona:req.session.nombre,
         tareas 
         
