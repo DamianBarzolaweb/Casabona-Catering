@@ -14,6 +14,8 @@ router.get('/', async function(req,res,next){
     });   
 });
 
+module.exports = router;
+
 // router.get('/', function(req, res, next) {
 //   res.render('admin/tareas', { title: 'Express' });
 //     layout:'admin/layout'
