@@ -4,8 +4,9 @@ var usuariosModel = require('./../../models/usuariosModel');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('admin/login', { title: 'Express' });
+  res.render('admin/login', { title: 'Express', 
     layout:'admin/layout'
+});
 });
 
 router.post('/', async function(req,res,next){
