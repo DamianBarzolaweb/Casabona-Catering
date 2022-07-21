@@ -21,7 +21,7 @@ router.post ('/', async function(req,res,next){
 var obj = {
   to:'damianbarzolaweb@gmail.com',
   subject:'Contacto desde la web',
-  html: nombre + " se contactó a traves de la web "
+  html: nombre + apellido + " se contactó a traves de la web. Su email es " + email + " y su mensaje fue: " + mensaje
 }
 
 var transport = nodemailer.createTransport({
