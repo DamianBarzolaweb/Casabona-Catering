@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 router.post ('/', async function(req,res,next){
   console.log(req.body)
   var nombre = req.body.nombre;
+  var apellido = req.body.apellido;
   var email = req.body.email;
   var localidad = req.body.localidad;
   var mensaje = req.body.mensaje;
