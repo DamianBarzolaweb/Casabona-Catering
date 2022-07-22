@@ -25,14 +25,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {{#each tareas}}
                     <tr>
-                        <th class="text-light" scope="row"> 1 </th>
-                        <td class="text-light"> Maridaje </td>
+                        <th class="text-light" scope="row"> {{id}} </th>
+                        <td class="text-light"> {{tarea}} </td>
                         <td class="text-end">
                             <a class="btn btn-secondary" href="#"><i class="fa-solid fa-pencil"></i></a>
                         </td>
                     </tr>
-                    <tr>
+                    {{/each}}
+                    {{!-- <tr>
                         <th class="text-light" scope="row"> 2 </th>
                         <td class="text-light"> Cocción </td>
                         <td class="text-end">
@@ -45,7 +47,7 @@
                         <td class="text-end">
                             <a class="btn btn-secondary" href="#"><i class="fa-solid fa-pencil"></i></a>
                         </td>
-                    </tr>
+                    </tr> --}}
                 </tbody>
             </table>
         </div>
