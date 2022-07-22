@@ -15,14 +15,14 @@ router.post ('/', async function(req,res,next){
   var apellido = req.body.apellido;
   var email = req.body.email;
   var localidad = req.body.localidad;
-  var codigopostal = req.body.codigopostal;
+  var telefono = req.body.telefono;
   var mensaje = req.body.mensaje;
 
 
 var obj = {
   to:'damianbarzolaweb@gmail.com',
   subject:'Contacto desde la web',
-  html: nombre + " " +  apellido + " se contactó a traves de la web. Su email es " + email + " vive en la localidad de " + localidad + " Código Postal: " + codigopostal + ". Su mensaje fue el siguiente: " + mensaje
+  html: nombre + " " +  apellido + " se contactó a traves de la web. Su email es " + email + " y vive en la localidad de " + localidad + ". Su teléfono es: " + telefono + ". Su mensaje fue el siguiente: " + mensaje
 }
 
 var transport = nodemailer.createTransport({
