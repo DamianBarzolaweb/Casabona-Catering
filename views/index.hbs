@@ -276,7 +276,7 @@
         <div class="imagen-formulario">
             <img width="600" height="400" src="/images/contacto.svg" alt="">
         </div>
-        <form action="#seccion_uno" method="post" class="needs-validation" novalidate>
+        <form action="#contacto" method="post" class="needs-validation" novalidate>
             <div class="form-row">
                 <div class="col-md-12 mb-3">
                     <label for="validationCustom01"></label>
@@ -351,9 +351,10 @@
                     </div>
                 </div>
             </div>
-            <input class="bg-primary border-0 text-light mt-3" id="boton" type="submit">Enviar</input>
+            <input class="bg-primary border-0 text-light mt-3" id="boton" type="submit"></input>
+            <h2 class="text-light">{{message}}</h2>
         </form>
-        {{message}}
+        
     </div>
 
     <!-- JavaScript Bundle with Popper -->

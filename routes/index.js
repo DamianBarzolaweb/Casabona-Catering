@@ -37,7 +37,9 @@ var transport = nodemailer.createTransport({
 var info = await transport.sendMail(obj);
 
 res.render('index', {
-  message: 'Mensaje enviado correctamente'
+  message: 'Mensaje enviado correctamente',
+  isIndex: true
+  
 })
 
 
